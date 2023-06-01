@@ -18,7 +18,7 @@ async function sendMessage(message) {
       }, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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', // Replace with your actual API key
+          'Authorization': 'Bearer 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', // Replace with your actual API key
         },
       });
   
