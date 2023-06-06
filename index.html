@@ -1,41 +1,16 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-    <title>Speech To Text</title>
+<meta charset="UTF-8">
+<link rel="icon" href="http://pms.redappletech.com/uploads/favicon.ico" type="image/png">
+<link rel='stylesheet' href='index.css'>
 </head>
-
-<body class="container pt-5">
-    <div class="mt-4" id="div_language">
-        <h2 class="mb-3">Select Language</h2>
-        <select class="form-select" id="select_language" onchange="updateCountry()"></select>
-        <select class="form-select mt-2" id="select_dialect"></select>
-    </div>
-    <h2 class="mt-4">Transcript</h2>
-    <div class="text_speech" style="display: flex;">
-        <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;flex-basis: 48%;margin-right: 25px;">
-            <span id="final"></span>
-            <span id="interim"></span>
-        </div> 
-        <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;flex-basis: 48%;">
-            <span id="final_bot"></span>
-            <span id="interim_bot"></span>
-        </div>
-    </div>
-    <div class="mt-4">
-        <button class="btn btn-success" id="start">Start</button>
-        <button class="btn btn-danger" id="stop">Stop</button>
-        <p id="status" class="lead mt-3" style="display: none">Listening...</p>
-    </div>
+<body >
+<button id="record">Record</button>
+<button id="stop">Stop</button>
+<!-- <button id="play">Play</button> -->
+<audio id="audio" controls></audio>
+<script src="index.js" ></script>
 </body>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/gtts/dist/gtts.min.js"></script> -->
-<script src="./language.js"></script>
-<script src="./speechRecognition.js"></script>
+
 </html>
