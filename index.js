@@ -60,8 +60,8 @@ async function playRecording() {
     const formData = new FormData();
     formData.append('audio', blob, 'recording.webm');
   
-    // let response = await fetch('https://demo.slotsdiamond.com/api/v1/message', {
-    let response = await fetch('http://localhost:5000/api/v1/message', {
+    let response = await fetch('https://demo.slotsdiamond.com/api/v1/message', {
+    // let response = await fetch('http://localhost:5000/api/v1/message', {
       method: 'POST',
       body: formData,
     });
